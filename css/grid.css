@@ -146,7 +146,6 @@
 
 
 body{
-    background-color:rgb(236,233,235);
     font-family:'Lato', sans-serif;
     font-size: 12pt;
 }
@@ -174,7 +173,6 @@ h2{
 .lettertypes{
     position:fixed;
 }
-
 
 
 ul {
@@ -212,39 +210,66 @@ a{
     margin: 40px auto;
     text-align:center;
     line-height: 50px;
-    box-shadow: 10px 15px 20px;
+    box-shadow: 5px 10px 10px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .knop:hover {
     background-color: rgb(199,151,179);
-    box-shadow: 10px 15px 20px;
+    box-shadow: 5px 5px 5px;
     color:black;
     
 }
+
+input::-webkit-input-placeholder, input, #versturen {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+} 
  
  form{
-     width:400px;
+     font-family:Lato;
+     width:350px;
      height:auto;
      overflow:hidden;
      position:absolute;
      top:160%;
      left:50%;
      transform: translateX(-50%) translateY(-50%);
+     background:#fff;
      box-sizing: border-box;
-     background:rgb(236,233,235);
 
  }
 
 form input{
     margin:10% 10% 0% 10%;
     width: 70%;
-    height: 100%;
     padding: 5%;
     display:block;
     border: none;
     border-bottom: 1px solid rgb(199,151,179);
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0) 99%, #dadada 1%);
+    background: linear-gradient( bottom, rgba(255,255,255,0)99%, #dadada 1%);
+    background-size: 0 100%;
+    background-repeat: no-repeat; 
+    color: #dadada;
 
 }
+
+
+input:focus{
+    outline:none;
+    background-size: 100% 100%;
+}
+input:focus::-webkit-input-placeholder{
+    font-size: 11px;
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+    visibility: visible !important;
+}
+
+
+
 
 #versturen{
     font-family: 'Pacifico', cursive;
@@ -257,14 +282,22 @@ form input{
     margin: 40px auto;
     text-align:center;
     line-height: 50px;
-    box-shadow: 10px 15px 20px;
+    box-shadow: 5px 10px 10px;
+    cursor:pointer;
 }
 
 #versturen:hover {
     background-color: rgb(199,151,179);
-    box-shadow: 10px 15px 20px;
+    box-shadow: 5px 5px 5px;
     color:black;
     
 }
 
 
+footer{
+    background-color:black;
+    padding: 10px;
+    padding-left: 30px;
+    color:white;
+    height: 170px;
+}
