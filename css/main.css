@@ -37,7 +37,7 @@
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 0 6%;
+    padding: 0 10%;
     min-width: 600px;
 }
 
@@ -221,6 +221,15 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+
+
+
+
+
 body {
     overflow-x: hidden;
 }
@@ -238,11 +247,12 @@ body {
     }
 
     nav li a {
-        margin: 0 auto;
+        text-align:center;
     }
 
     .knoppen {
-        float: right; /* TODO: change to center */
+        float: right;
+        margin:0 auto; /* TODO: change to center */
     }
 }
 
@@ -256,8 +266,56 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -400%);
 }
+
+
+.portfolio img{
+    width: 100%;
+    height: auto;
+    border: solid black 1px;
 }
 
+.portfolio p{
+    margin-bottom: 10%;
+}
+
+.portfolio iframe{
+    height: auto;
+    width:100%;
+}
+
+.detail img{
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.detail p{
+    color: white;
+    font-weight: 70;    
+    text-align: center;
+    width: 70%;
+    padding: 10px 2px;
+    background-color: rgba(248,197,19,0.7);
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: blur(0);
+	filter: blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.detail:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.detail:hover p {
+	-webkit-filter: blur(400px);
+	filter: blur(400px);
+}
 
 
 #driehoek {
@@ -289,7 +347,6 @@ nav li {
 }
 
 nav a {
-    float: right;
     display: block;
     font-family: 'Pacifico', cursive;
     font-size: 20pt;
@@ -342,39 +399,7 @@ nav a:hover {
     font-size: 20px;
 }
 
-#diensten {
-    float: left;
-    margin: 40px;
-}
 
-#diensten2 {
-    float: left;
-    margin-top: 144px;
-    margin-right: 40px;
-}
-
-#diensten3 {
-    margin-left: -304px;
-    margin-top: 134px;
-    margin-right: 40px;
-}
-
-#tekstdiensten {
-    float: left;
-    padding-top: 80pt;
-}
-
-#marketing {
-    margin-top: 224px;
-    margin-left: 40px;
-
-}
-
-#opmaak {
-    float: left;
-    margin-top: 224px;
-
-}
 
 .diagonaal {
     position: absolute;
@@ -387,27 +412,14 @@ nav a:hover {
 
 .diagonaal2 {
     position: absolute;
-    margin-top: 2000pt;
+    margin-top: 1800pt;
     -webkit-transform: rotate(21.55deg);
     transform-origin: 0% 0%;
     z-index: -1;
     overflow-x: hidden;
 }
 
-#overons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
 
-#overonsp {
-    padding-top: 420px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-right: -26%;
-}
 
 .card {
     background-color: white;
@@ -417,7 +429,7 @@ nav a:hover {
 }
 .card-image{
     width: 100%;
-    padding: 20px;
+    
 }
 
 .card-tekst{
@@ -426,17 +438,12 @@ nav a:hover {
     text-align: center;
 }
 
-
 .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
 
-.tekstkader {
-    padding: 2px 50px;
-    width: 600px;
-}
 
 footer {
     background-color: black;
