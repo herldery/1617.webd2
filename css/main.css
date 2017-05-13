@@ -335,14 +335,24 @@ body {
 }
 
 
-.black:checked ~ .dozen > .black,
-.red:checked ~ .dozen > .red{
+.A:checked ~ .dozen > .A,
+.B:checked ~ .dozen > .B,
+.C:checked ~ .dozen > .C,
+.D:checked ~ .dozen > .D,
+.E:checked ~ .dozen > .E,
+.F:checked ~ .dozen > .F,
+.G:checked ~ .dozen > .G{
     opacity:1;
     
 }
 
-.black:checked ~ .labels > .b-label,
-.red:checked ~ .labels > .r-label {
+.A:checked ~ .labels > .b-label,
+.B:checked ~ .labels > .r-label,
+.C:checked ~ .labels > .y-label,
+.D:checked ~ .labels > .o-label,
+.E:checked ~ .labels > .p-label,
+.F:checked ~ .labels > .bl-label,
+.G:checked ~ .labels > .g-label {
 background-color: rgba(143,188,195,1);
 
 }    
