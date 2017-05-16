@@ -45,7 +45,7 @@
     display: block;
     margin: 0 -12px;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .grid__wrapper:after,
@@ -252,7 +252,7 @@ body {
 
     .knoppen {
         float: right;
-        margin:0 auto; /* TODO: change to center */
+        margin:0 auto; 
     }
 }
 
@@ -267,6 +267,17 @@ body {
     transform: translate(-50%, -400%);
 }
 
+.dienstenpagina img{
+    width: 100%
+
+}
+
+.dienstenpagina p{
+    text-align: right; 
+    font-family: 'Lato Light', sans-serif;
+    font-style: italic; 
+    font-size: 16px;
+}
 
 .portfolio img{
     width: 100%;
@@ -305,8 +316,8 @@ body {
     transform: translate(-50%, -50%);
     -webkit-filter: blur(0);
 	filter: blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 .detail:hover img {
@@ -361,7 +372,7 @@ background-color: rgba(143,188,195,1);
 
 .labels{
     position: absolute;
-    bottom -30px;
+    bottom:-1px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -380,15 +391,6 @@ background-color: rgba(143,188,195,1);
     display:none;
 }
 
-
-#driehoek {
-    width: 100%;
-    border-top: 600px solid lightgrey;
-    opacity: 0.3;
-    border-left: 1519px solid transparent;
-    position: absolute;
-    z-index: -1;
-}
 
 ul {
     font-family: 'Pacifico', cursive;
@@ -435,8 +437,6 @@ nav a:hover {
     margin: 0 auto;
 }
 
-
-
 .knop {
     float: right;
     text-decoration: none;
@@ -462,27 +462,43 @@ nav a:hover {
     font-size: 20px;
 }
 
-
-
-.diagonaal {
+.diagonaalmidden {
+    height: 700px;
     position: absolute;
-    margin-top: 620pt;
+    margin-top: 620px;
     -webkit-transform: rotate(21.55deg);
     transform-origin: 0% 0%;
     z-index: -1;
     overflow-x: hidden;
+    background-color:lightgrey;
+    width: 300% !important;
+    opacity: 0.3;
 }
 
-.diagonaal2 {
+.diagonaalonder {
+    height: 700px;
     position: absolute;
-    margin-top: 1800pt;
+    margin-top: 2200px;
     -webkit-transform: rotate(21.55deg);
     transform-origin: 0% 0%;
     z-index: -1;
     overflow-x: hidden;
+    background-color:lightgrey;
+    width: 300% !important;
+    opacity: 0.3;
 }
-
-
+.diagonaaltop {
+    height: 700px;
+    position: absolute;
+    margin-top: -780px;
+    -webkit-transform: rotate(21.55deg);
+    transform-origin: 0% 0%;
+    z-index: -1;
+    overflow-x: hidden;
+    background-color:lightgrey;
+    opacity: 0.3;
+    width: 300% !important;
+}
 
 .card {
     background-color: white;
@@ -515,3 +531,106 @@ footer {
 }
 
 
+
+input::-webkit-input-placeholder, input, #versturen {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+} 
+ 
+ form{
+     font-family:Lato;
+     width: 100%;
+
+ }
+
+form input{
+    margin:10% 10% 0% 10%;
+    width: 80%;
+    padding: 5%;
+    display:block;
+    border: none;
+    border-bottom: 2px dotted rgba(248,197,19,0.7);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 99%, #dadada 1%);
+    background: linear-gradient( bottom, rgba(255,255,255,0)99%, #dadada 1%);
+    background-size: 0 100%;
+    background-repeat: no-repeat; 
+    color:black;
+
+}
+
+
+input:focus{
+    outline:none;
+    background-size: 100% 100%;
+}
+input:focus::-webkit-input-placeholder{
+    font-size: 11px;
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+    visibility: visible !important;
+}
+
+#versturen{
+    font-family: 'Pacifico', cursive;
+    font-size: 18px; 
+    width: 200px;
+    height: 70px;
+    display: block;
+    background-color:rgb(248,216,241);
+    color:black; 
+    margin: 40px auto;
+    text-align:center;
+    line-height: 50px;
+    box-shadow: 5px 10px 10px;
+    cursor:pointer;
+}
+
+#versturen:hover {
+    background-color: rgb(199,151,179);
+    box-shadow: 5px 5px 5px;
+    color:black;
+    
+}
+
+.contactgegevens{
+    background-color: rgba(143,188,195,0.3);
+}
+
+.kaart{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+form textarea{
+    margin:10% 10% 0% 10%;
+    width: 80%;
+    padding: 5%;
+    display:block;
+    border: none;
+    border-bottom: 2px dotted rgba(248,197,19,0.7);
+    background-size: 0 100%;
+    background-repeat: no-repeat; 
+    color:black;
+}
+
+textarea{
+    height: 200px;
+}
+
+textarea:focus{
+    outline:none;
+    background-size: 100% 100%;
+}
+textarea:focus::-webkit-input-placeholder{
+    font-size: 11px;
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+    visibility: visible !important;
+}
+
+
+.active {
+    color: rgb(199, 151, 179);
+}
