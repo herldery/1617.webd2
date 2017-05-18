@@ -222,22 +222,14 @@
 }
 
 
-
-
-
-
-
-
-
+/**
+* ————————-
+* @body en navigatie
+* ————————-
+*/
 
 body {
     overflow-x: hidden;
-}
-
-.recent-works img {
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
 }
 
 @media screen and (max-width: 740px) {
@@ -255,144 +247,7 @@ body {
         margin:0 auto; 
     }
 }
-
-.services img{
-    width: 35%;
-}
-.services p{
-    text-align: right;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -400%);
-}
-
-.dienstenpagina img{
-    width: 100%
-
-}
-
-.dienstenpagina p{
-    text-align: right; 
-    font-family: 'Lato Light', sans-serif;
-    font-style: italic; 
-    font-size: 16px;
-}
-
-.portfolio img{
-    width: 100%;
-    height: auto;
-    border: solid black 1px;
-}
-
-.portfolio p{
-    margin-bottom: 10%;
-}
-
-.portfolio iframe{
-    height: auto;
-    width:100%;
-}
-
-.detail img{
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.detail p{
-    font-family: "Lato Light";
-    font-style:italic;
-    color: white;
-    font-weight: 70;    
-    text-align: center;
-    width: 70%;
-    padding: 10px 2px;
-    background-color: rgba(248,197,19,0.7);
-    position: absolute;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-filter: blur(0);
-	filter: blur(0);
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
-}
-
-.detail:hover img {
-	-webkit-filter: blur(0);
-	filter: blur(0);
-}
-
-.detail:hover p {
-	-webkit-filter: blur(400px);
-	filter: blur(400px);
-}
-.dozen{
-    position:relative;
-    width:100%;
-    height:500px;
-    margin:0 auto;
-}
-.doos {
-    width:100%;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    left:0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-
-.A:checked ~ .dozen > .A,
-.B:checked ~ .dozen > .B,
-.C:checked ~ .dozen > .C,
-.D:checked ~ .dozen > .D,
-.E:checked ~ .dozen > .E,
-.F:checked ~ .dozen > .F,
-.G:checked ~ .dozen > .G{
-    opacity:1;
-    
-}
-
-.A:checked ~ .labels > .b-label,
-.B:checked ~ .labels > .r-label,
-.C:checked ~ .labels > .y-label,
-.D:checked ~ .labels > .o-label,
-.E:checked ~ .labels > .p-label,
-.F:checked ~ .labels > .bl-label,
-.G:checked ~ .labels > .g-label {
-background-color: rgba(143,188,195,1);
-
-}    
-
-
-
-.labels{
-    position: absolute;
-    bottom:-1px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.schuifindex{
-    width:14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color:white;
-    display:inline-block;
-    margin-right:6px;
-    cursor:pointer;
-    border: 2px dotted;
-}
-
-.rnav{
-    display:none;
-}
-
-
-ul {
+.menu > ul {
     font-family: 'Pacifico', cursive;
     margin: 0;
     padding: 0;
@@ -400,7 +255,8 @@ ul {
     height: 60px;
 }
 
-nav li {
+
+.menu>ul>li {
     font-family: 'Pacifico', cursive;
     display: inline;
     float: right;
@@ -411,7 +267,7 @@ nav li {
     height: 60px;
 }
 
-nav a {
+.menu >ul >li >a {
     display: block;
     font-family: 'Pacifico', cursive;
     font-size: 20pt;
@@ -422,44 +278,13 @@ nav a {
 
 }
 
-nav a:hover {
+.menu > ul > li > a:hover {
     color: rgb(199, 151, 179);
     font-size: 29px;
 }
 
-#hero {
-    background-size: cover;
-    background-position: center;
-    padding-top: 5%;
-    height: auto;
-    display: block;
-    width: 60%;
-    margin: 0 auto;
-}
-
-.knop {
-    float: right;
-    text-decoration: none;
-    padding: 8px;
-    font-size: 20px;
-    width: 270px;
-    height: 70px;
-    display: block;
-    background-color: rgb(248, 216, 241);
-    color: black;
-    margin: 30px auto;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 5px 10px 10px;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-
-.knop:hover {
-    background-color: rgb(199, 151, 179);
-    box-shadow: 5px 5px 5px;
-    color: black;
-    font-size: 20px;
+.menu .active {
+    color: rgb(199, 151, 179);
 }
 
 .diagonaalmidden {
@@ -500,6 +325,38 @@ nav a:hover {
     width: 300% !important;
 }
 
+
+/**
+* ————————-
+* @homepagina
+* ————————-
+*/
+
+.recentewerken img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.diensten img{
+    width: 35%;
+}
+.diensten p{
+    text-align: right;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -400%);
+}
+#hero {
+    background-size: cover;
+    background-position: center;
+    padding-top: 5%;
+    height: auto;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
 .card {
     background-color: white;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
@@ -522,6 +379,176 @@ nav a:hover {
 }
 
 
+/**
+* ————————-
+* @diensten
+* ————————-
+*/
+.dienstenpagina img{
+    width: 100%
+
+}
+
+.dienstenpagina p{
+    text-align: right; 
+    font-family: 'Lato Light', sans-serif;
+    font-style: italic; 
+    font-size: 16px;
+}
+
+
+/**
+* ————————-
+* @portfolio
+* ————————-
+*/
+.portfolio p{
+    margin-bottom: 10%;
+}
+
+.portfolio iframe{
+    height: auto;
+    width:100%;
+}
+
+.portfolio img{
+    width: 100%;
+    height: auto;
+    border: solid black 1px;
+}
+
+.detail img{
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.detail p{
+    font-family: "Lato Light";
+    font-style:italic;
+    color: white;
+    font-weight: 70;    
+    text-align: center;
+    width: 70%;
+    padding: 10px 2px;
+    background-color: rgba(248,197,19,0.7);
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: blur(0);
+	filter: blur(0);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.detail:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.detail:hover p {
+	-webkit-filter: blur(400px);
+	filter: blur(400px);
+}
+
+/**
+* ————————-
+* @detailpagina portfolio
+* ————————-
+*/
+.dozen{
+    position:relative;
+    width:100%;
+    height:500px;
+    margin:0 auto;
+}
+.doos {
+    width:100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.A:checked ~ .dozen > .A,
+.B:checked ~ .dozen > .B,
+.C:checked ~ .dozen > .C,
+.D:checked ~ .dozen > .D,
+.E:checked ~ .dozen > .E,
+.F:checked ~ .dozen > .F,
+.G:checked ~ .dozen > .G{
+    opacity:1;
+    
+}
+.A:checked ~ .labels > .b-label,
+.B:checked ~ .labels > .r-label,
+.C:checked ~ .labels > .y-label,
+.D:checked ~ .labels > .o-label,
+.E:checked ~ .labels > .p-label,
+.F:checked ~ .labels > .bl-label,
+.G:checked ~ .labels > .g-label {
+background-color: rgba(143,188,195,1);
+
+}    
+
+.labels{
+    position: absolute;
+    bottom:-1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.schuifindex{
+    width:14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color:white;
+    display:inline-block;
+    margin-right:6px;
+    cursor:pointer;
+    border: 2px dotted;
+}
+
+.rnav{
+    display:none;
+}
+
+/**
+* ————————-
+* @knoppen
+* ————————-
+*/
+
+.knop {
+    float: right;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 20px;
+    width: 270px;
+    height: 70px;
+    display: block;
+    background-color: rgb(248, 216, 241);
+    color: black;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 5px 10px 10px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.knop:hover {
+    background-color: rgb(199, 151, 179);
+    box-shadow: 5px 5px 5px;
+    color: black;
+    font-size: 20px;
+}
+
+
+
 
 
 footer {
@@ -529,7 +556,13 @@ footer {
     color: white;
     height: 170px;
 }
+/**
+* ————————-
+* @contact
+* ————————-
+*/
 
+/* @formulier*/
 
 
 input::-webkit-input-placeholder, input, #versturen {
@@ -549,16 +582,13 @@ form input{
     padding: 5%;
     display:block;
     border: none;
-    border-bottom: 2px dotted rgba(248,197,19,0.7);
+    border-bottom: 2px dotted rgba(143,188,195,0.7);
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 99%, #dadada 1%);
     background: linear-gradient( bottom, rgba(255,255,255,0)99%, #dadada 1%);
     background-size: 0 100%;
     background-repeat: no-repeat; 
     color:black;
-
 }
-
-
 input:focus{
     outline:none;
     background-size: 100% 100%;
@@ -569,7 +599,6 @@ input:focus::-webkit-input-placeholder{
     transform: translateY(-25px);
     visibility: visible !important;
 }
-
 #versturen{
     font-family: 'Pacifico', cursive;
     font-size: 18px; 
@@ -609,7 +638,7 @@ form textarea{
     padding: 5%;
     display:block;
     border: none;
-    border-bottom: 2px dotted rgba(248,197,19,0.7);
+    border-bottom: 2px dotted rgba(143,188,195,0.7);
     background-size: 0 100%;
     background-repeat: no-repeat; 
     color:black;
@@ -631,6 +660,96 @@ textarea:focus::-webkit-input-placeholder{
 }
 
 
-.active {
-    color: rgb(199, 151, 179);
+/**
+* ————————-
+* @footer
+* ————————-
+*/
+footer{
+    border-top-left-radius: 9px;
+    border-top-right-radius:9px;
+    background-color:black;
+    height: auto;
+    padding: 10px 30px;
+}
+
+.footer h1{
+    margin:3% 0%;
+}
+.footer__nav >ul{
+    margin-left:-40px;
+}
+
+.footer__nav > ul > li {
+    float:none; 
+    display: block;
+    padding: 0px;
+    height: 35px;
+    
+}
+.footer__nav > ul > li > a {
+    font-family: "Lato", sans-serif;
+    font-size: 16px; 
+    padding:5px;text-decoration:none;
+    color:white; 
+}
+.footer__nav > ul > li > a:hover {
+    color:white;
+}
+.social-media img{
+      width: 8%;
+    vertical-align: middle;
+    margin-right: 13px;
+    margin-bottom: 7px;
+}
+
+.social-media a{
+   float:right;
+   position:block;
+   font-family:'Lato'; sans-serif;
+   font-size: 16px; 
+    text-decoration: none;
+    color: white;
+}
+
+
+.extra{
+    margin-top: 140px;
+}
+.extra a{
+    display:block;
+    font-family:'Lato'; sans-serif;
+    font-size: 10px;
+    float:right;
+    text-decoration: none; 
+    color: white;
+    padding-right: 9px;
+
+}
+.extra a:hover{
+    display:block;
+    font-family:'Lato'; sans-serif;
+    border-bottom: 1px solid; 
+    font-size: 10px;
+    float:right;
+    text-decoration: none; 
+
+}
+
+.extra p{
+    font-family:'Lato'; sans-serif;
+    font-size: 10px;
+    float: right;
+
+}
+
+.sitemap{
+    width: 100%;
+    margin: 0, auto;
+}
+.snoepen p{
+    text-align:center;
+}
+.snoepen img{
+    width:20%;
 }
