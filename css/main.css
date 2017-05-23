@@ -314,7 +314,7 @@ body {
 }
 .diagonaaltop {
     height: 700px;
-    position: absolute;
+    position: fixed;
     margin-top: -780px;
     -webkit-transform: rotate(21.55deg);
     transform-origin: 0% 0%;
@@ -407,7 +407,7 @@ body {
 }
 
 .portfolio iframe{
-    height: auto;
+    height: 428px;
     width:100%;
 }
 
@@ -463,6 +463,7 @@ body {
     width:100%;
     height:500px;
     margin:0 auto;
+    margin-bottom: 15%;
 }
 .doos {
     width:100%;
@@ -548,7 +549,12 @@ background-color: rgba(143,188,195,1);
 }
 
 
-
+.footer-wrapper{
+    background-color:black;
+     border-top-left-radius: 9px;
+    border-top-right-radius:9px;
+    margin-top:4%;
+}
 
 
 footer {
