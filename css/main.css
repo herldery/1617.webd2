@@ -612,6 +612,7 @@ input:focus::-webkit-input-placeholder{
     line-height: 50px;
     box-shadow: 5px 10px 10px;
     cursor:pointer;
+    border:none;
 }
 
 #versturen:hover {
@@ -659,6 +660,10 @@ textarea:focus::-webkit-input-placeholder{
     visibility: visible !important;
 }
 
+textarea::-webkit-input-placeholder, input, #versturen {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+} 
 
 /**
 * ————————-
@@ -752,4 +757,11 @@ footer{
 }
 .snoepen img{
     width:20%;
+}
+.copyright p{
+text-align:center;
+}
+.copyright img{
+    margin-top:60px;
+    width:50%;
 }
