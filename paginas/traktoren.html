@@ -46,14 +46,14 @@
     <!-- Stylesheets: Vendors -->
     <link rel="stylesheet" media="all" href="vendor/normalize/normalize.css">
     <!-- Stylesheets: App -->
-    <link rel="stylesheet" media="all" href="css/fonts.css">
-    <link rel="stylesheet" media="all" href="css/typography.css">
-    <link rel="stylesheet" media="all" href="css/main.css">
+   <link rel="stylesheet" media="all" href="../css/fonts.css">
+    <link rel="stylesheet" media="all" href="../css/typography.css">
+    <link rel="stylesheet" media="all" href="../css/main.css">
     <!-- Modernizr: feature detection -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
     <!-- fonts ingevoegd 25/04 -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet"> 
 </head>
 
 <body>
@@ -65,13 +65,13 @@
                 <a href="contact.html">Contact</a>
             </li>
             <li>
-                <a href="diensten.html"class="active">Diensten</a>
+                <a href="diensten.html">Diensten</a>
             </li>
             <li>
-                <a href="portfolio.html">Portfolio</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
             </li>
             <li>
-                <a href="index.html">Home</a>
+                <a href="..\index.html">Home</a>
             </li>
         </ul>
     </nav>
@@ -79,69 +79,75 @@
 
 <div class="grid__wrapper">
     <div class="diagonaaltop"></div>
-
     <div class="grid__container">
-        
+        <div class="grid__row">
+            <div class="grid__column-12">
+
+            </div>
+        </div>
+        <!-- DETAIL PORTFOLIO-->
 
         <div class="grid__row">
-            <!-- DIENSTEN -->
             <div class="grid__column-12">
-                <h1>Diensten</h1>
+                <h1>Detail digitale tekening traktoren</h1>
             </div>
         </div>
-        <div class="grid__row dienstenpagina">
-            <div class="grid__column-6">
-                <div class="grid__column-4">
-                    <img src="assets\images\logomaken.png" alt="logo over de dienst logo's maken">
-                </div>
-                <div class="grid__column-8">
-                    <p>Samen met u kiezen we welk logo best bij uw imago past.</p>
-                    <p>Door ons te differientiëren van de doorsnee marketeer</p>
-                    <p>kunnen wij ter plaatse al enkele logo voorstellen opmaken.</p>
-                </div>
+        <div class="grid__row portfolio">
+            <div class="grid__column-2"><p></p>
             </div>
-            <div class="grid__column-6">
-                <div class="grid__column-4 diensten-icon">
-                    <img src="assets\images\drukken.png" alt="logo over de dienst drukken">
+            <div class="grid__column-8">
+
+                <div class="omvatting">
+                    <input type="radio" class="rnav A" id="slide_1" name="coins" checked>
+                    <input type="radio" class="rnav B" id="slide_2" name="coins">
+                    <input type="radio" class="rnav C" id="slide_3" name="coins">
+                    <input type="radio" class="rnav D" id="slide_4" name="coins">
+                    <input type="radio" class="rnav E" id="slide_5" name="coins">
+                    <input type="radio" class="rnav F" id="slide_6" name="coins">
+                    <input type="radio" class="rnav G" id="slide_7" name="coins">
+
+                    <div class="dozen">
+                        <div class="doos A">
+                            <img src="..\assets\images\traktoren.jpg" alt="overzicht 2 traktoren">
+                        </div>
+                        <div class="doos B ">
+                            <img src="..\assets\images\john.jpg" alt="detail">
+                        </div>
+                        <div class="doos C">
+                            <img src="..\assets\images\ford.jpg" alt="detail">
+                        </div>
+                        <div class="doos D">
+                            <img src="..\assets\images\logojohn.jpg" alt="detail">
+                        </div>
+                        <div class="doos E">
+                            <img src="..\assets\images\wielenford.jpg" alt="detail">
+                        </div>
+                        <div class="doos F">
+                            <img src="..\assets\images\origineel.jpg" alt="detail">
+                        </div>
+                        <div class="doos G">
+                            <img src="..\assets\images\voorbeeld.jpg" alt="detail">
+                        </div>
+                    </div>
+
+                    <div class="labels">
+                        <label for="slide_1" class="schuifindex b-label"></label>
+                        <label for="slide_2" class="schuifindex r-label"></label>
+                        <label for="slide_3" class="schuifindex y-label"></label>
+                        <label for="slide_4" class="schuifindex o-label"></label>
+                        <label for="slide_5" class="schuifindex p-label"></label>
+                        <label for="slide_6" class="schuifindex bl-label"></label>
+                        <label for="slide_7" class="schuifindex g-label"></label>
+                    </div>
                 </div>
-                <div class="grid__column-8">
-                    <p>Wij bezitten alle kennis over pre-press, press en</p>
-                    <p>kunnen ook crossmediaal werken.</p>
-                    <p> Wil u een geprint beeld digitaal? Dat kan! </p>
-                </div>
+
+                <div class="grid__column-2"><p></p></div>
+
             </div>
         </div>
-    <div class="grid__row dienstenpagina">
-            <div class="grid__column-2">
-                <img src="assets\images\marketing.png" alt="logo over de dienst marketing">
-            </div>
-            <div class="grid__column-4">
-                <p>Samen met u maken we een strategie op om uw</p>
-                <p>toekomstplannen te realiseren.</p>
-            </div>
-
-            <div class="grid__column-2">
-                <img src="assets\images\opmaak.png" alt="logo over de dienst opmaak">
-            </div>
-            <div class="grid__column-4">
-                <p>Wij ontwerpen met veel liefde voor uw zaak</p>
-                <p>uw ideale catalogus, reclamefolder, magazine,...</p>
-            </div>
-        </div>
-
-
-
-
- </div>
-
-      
-
-
     </div>
 
-
-   </div>
-
+</div>
 
     <div class="footer-wrapper">
         <div class="grid__container">
@@ -164,7 +170,7 @@
                     <a href="portfolio.html">Portfolio</a>
                   </li>
                    <li>
-                    <a href="index.html">Home</a>
+                    <a href="..\index.html">Home</a>
                   </li>
                 </ul>
             </nav>
@@ -174,16 +180,15 @@
 						<div class="grid__column-4 social-media">
               <h1>Volg ons</h1>
                 <a href="https://www.facebook.com/">
-                <img src="assets\images\facebook2.png">Facebook</a>
+                <img src="..\assets\images\facebook2.png">Facebook</a>
                 <a href="https://www.instagram.com/">
-                <img src="assets\images\instagram.png">Instagram</a>
+                <img src="..\assets\images\instagram.png">Instagram</a>
                 <a href="https://www.pinterest.com/">
-                <img src="assets\images\pinterest.png">Pinterest</a>
+                <img src="..\assets\images\pinterest.png">Pinterest</a>
         		</div>
 
 
-                
- 					<div class="grid__column-4 extra">
+               <div class="grid__column-4 extra">
              <a href="copyright.html">Herlinde Derycke ©2017</a>
               <a href="disclaimer.html">Disclaimer</a>
               
@@ -203,7 +208,5 @@
 </div>
 </div>
 </div>
-
-
 </body>
 </html>

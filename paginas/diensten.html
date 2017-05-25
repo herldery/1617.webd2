@@ -46,14 +46,14 @@
     <!-- Stylesheets: Vendors -->
     <link rel="stylesheet" media="all" href="vendor/normalize/normalize.css">
     <!-- Stylesheets: App -->
-    <link rel="stylesheet" media="all" href="css/fonts.css">
-    <link rel="stylesheet" media="all" href="css/typography.css">
-    <link rel="stylesheet" media="all" href="css/main.css">
+     <link rel="stylesheet" media="all" href="../css/fonts.css">
+    <link rel="stylesheet" media="all" href="../css/typography.css">
+    <link rel="stylesheet" media="all" href="../css/main.css">
     <!-- Modernizr: feature detection -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
     <!-- fonts ingevoegd 25/04 -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet"> 
 </head>
 
 <body>
@@ -65,13 +65,13 @@
                 <a href="contact.html">Contact</a>
             </li>
             <li>
-                <a href="diensten.html">Diensten</a>
+                <a href="diensten.html"class="active">Diensten</a>
             </li>
             <li>
-                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="portfolio.html">Portfolio</a>
             </li>
             <li>
-                <a href="index.html">Home</a>
+                <a href="..\index.html">Home</a>
             </li>
         </ul>
     </nav>
@@ -79,117 +79,69 @@
 
 <div class="grid__wrapper">
     <div class="diagonaaltop"></div>
-   <!-- <div class="diagonaalmidden"></div>-->
-    <!--<div class="diagonaalonder"></div>-->
 
     <div class="grid__container">
-        <div class="grid__row">
-            <div class="grid__column-12">
+        
 
+        <div class="grid__row">
+            <!-- DIENSTEN -->
+            <div class="grid__column-12">
+                <h1>Diensten</h1>
             </div>
         </div>
-        <!-- PORTFOLIO-->
-        <!-- eerste rij-->
-        <div class="grid__row portfolio">
-            <div class="grid__column-12">
-                <h1>Portfolio</h1>
+        <div class="grid__row dienstenpagina">
+            <div class="grid__column-6">
+                <div class="grid__column-4">
+                    <img src="..\assets\images\logomaken.png" alt="logo over de dienst logo's maken">
+                </div>
+                <div class="grid__column-8">
+                    <p>Samen met u kiezen we welk logo best bij uw imago past.</p>
+                    <p>Door ons te differientiëren van de doorsnee marketeer</p>
+                    <p>kunnen wij ter plaatse al enkele logo voorstellen opmaken.</p>
+                </div>
             </div>
             <div class="grid__column-6">
-                <a href="traktoren.html">
-                    <div class="detail">
-                        <img src="assets\images\traktoren.jpg" alt="visual starpulling event">
-               
-                <p>Klik hier om meer te zien</p> </a>
+                <div class="grid__column-4 diensten-icon">
+                    <img src="..\assets\images\drukken.png" alt="logo over de dienst drukken">
+                </div>
+                <div class="grid__column-8">
+                    <p>Wij bezitten alle kennis over pre-press, press en</p>
+                    <p>kunnen ook crossmediaal werken.</p>
+                    <p> Wil u een geprint beeld digitaal? Dat kan! </p>
+                </div>
             </div>
-            <p>Tekening traktoren voor evenement</p>
+        </div>
+    <div class="grid__row dienstenpagina">
+            <div class="grid__column-2">
+                <img src="..\assets\images\marketing.png" alt="logo over de dienst marketing">
+            </div>
+            <div class="grid__column-4">
+                <p>Samen met u maken we een strategie op om uw</p>
+                <p>toekomstplannen te realiseren.</p>
+            </div>
 
+            <div class="grid__column-2">
+                <img src="..\assets\images\opmaak.png" alt="logo over de dienst opmaak">
+            </div>
+            <div class="grid__column-4">
+                <p>Wij ontwerpen met veel liefde voor uw zaak</p>
+                <p>uw ideale catalogus, reclamefolder, magazine,...</p>
+            </div>
         </div>
 
-        <div class="grid__column-6">
-            <img src="assets\images\4stadia.jpg" alt="visual letterexplosie">
-            <p>Letterexplosie in Illustrator</p>
-        </div>
-    </div>
-    <!-- tweede rij-->
-    <div class="grid__row portfolio">
-        <div class="grid__column-6">
-            <img src="assets\images\2017.png" alt="visual 2017">
-            <p>2017 uitgewerkt in Illustrator</p>
-        </div>
-        <div class="grid__column-6">
 
-        </div>
-        <div class="grid__column-6">
-            <iframe src="https://player.vimeo.com/video/215495439" webkitallowfullscreen mozallowfullscreen
-                    allowfullscreen></iframe>
-            <p>Stopmotion filmpje</p>
-        </div>
-    </div>
-    <!-- derde rij-->
-    <div class="grid__row portfolio">
-        <div class="grid__column-6">
-            <a href="kookboek.html">
-                <div class="detail">
-                    <img src="assets\images\kookboek.jpg" alt="visual kookboek">
-            
-            <p>Klik hier om meer te zien</p></a>
-        </div>
-        <p>ontwerp kookboek</p>
+
+
+ </div>
+
+      
+
+
     </div>
 
-    <div class="grid__column-6">
-        <img src="assets\images\logomama.png" alt="visuals uitwerking logo voor mijn moeder">
-        <p>Ontwerp logo</p>
-    </div>
-</div>
 
-<!-- vierde rij-->
-<div class="grid__row portfolio">
-    <div class="grid__column-6">
-        <img src="assets\images\duivel.jpg" alt="werken met actieve verf in illustrator">
-        <p>duivel</p>
-    </div>
+   </div>
 
-    <div class="grid__column-6">
-        <img src="assets\images\poster.jpg" alt="persoonlijke poster voor het vak LODO">
-        <p>persoonlijke poster</p>
-    </div>
-</div>
-
-<!-- vijfde rij-->
-<div class="grid__row portfolio">
-    <div class="grid__column-6">
-        <img src="assets\images\gelijkstramien.jpg" alt="uitwerking spread">
-        <p>spread in magazine</p>
-    </div>
-
-    <div class="grid__column-6">
-        <img src="assets\images\automatisatie.jpg" alt="automatiseren in de les premedia">
-        <p>doorgedreven automatisatie</p>
-    </div>
-</div>
-
-<!-- zesde rij-->
-<div class="grid__row portfolio">
-    <div class="grid__column-6">
-        <img src="assets\images\kenny.jpg" alt="uitwerking opdracht">
-        <p>poster verjaardagscadeau</p>
-    </div>
-
-    <div class="grid__column-6">
-        <a href="businessplan.html">
-            <div class="detail">
-                <img src="assets\images\businessplan.jpg" alt="uitwerking businessmodel">
-        
-        <p>Klik hier om meer te zien</p></a>
-    </div>
-    <p>uittekenen van business model</p>
-</div>
-</div>
-
-</div>
-
-</div>
 
     <div class="footer-wrapper">
         <div class="grid__container">
@@ -212,7 +164,7 @@
                     <a href="portfolio.html">Portfolio</a>
                   </li>
                    <li>
-                    <a href="index.html">Home</a>
+                    <a href="..\index.html">Home</a>
                   </li>
                 </ul>
             </nav>
@@ -222,11 +174,11 @@
 						<div class="grid__column-4 social-media">
               <h1>Volg ons</h1>
                 <a href="https://www.facebook.com/">
-                <img src="assets\images\facebook2.png">Facebook</a>
+                <img src="..\assets\images\facebook2.png">Facebook</a>
                 <a href="https://www.instagram.com/">
-                <img src="assets\images\instagram.png">Instagram</a>
+                <img src="..\assets\images\instagram.png">Instagram</a>
                 <a href="https://www.pinterest.com/">
-                <img src="assets\images\pinterest.png">Pinterest</a>
+                <img src="..\assets\images\pinterest.png">Pinterest</a>
         		</div>
 
 
@@ -251,6 +203,7 @@
 </div>
 </div>
 </div>
+
 
 </body>
 </html>
