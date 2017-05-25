@@ -647,6 +647,7 @@ input:focus::-webkit-input-placeholder{
 
 
 form textarea{
+    font-family: 'Lato', sans-serif;
     margin:10% 10% 0% 10%;
     width: 80%;
     padding: 5%;
